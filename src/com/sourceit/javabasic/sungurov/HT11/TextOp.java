@@ -9,6 +9,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
+import java.util.TreeSet;
 
 import javax.swing.text.AttributeSet.CharacterAttribute;
 
@@ -17,7 +18,6 @@ public class TextOp extends TextStatistics {
 	int Count = 0;
 	String buffer = this.getText();
 	int length = buffer.length();
-	char g;
 
 	public TextOp(String text) {
 		super(text);
@@ -29,28 +29,41 @@ public class TextOp extends TextStatistics {
 	 */
 	public static void main(String[] args) {
 
-		TextOp s = new TextOp(
-				"Hello, my little char inedx for cream nice for money peace");
-		s.getText();
+		TextOp s = new TextOp("Hello, my little char inedx for cream nice for money peace");
 
-		System.out.println(s);
+		System.out.println("Text operation is: " + s.getText());
 		System.out.println();
 		
-		System.out.print("The character 'l' occurs in a text ");
+		System.out.print("The character " + 'l' + " occurs in a text: ");
 		s.getCharCount('l');
 		System.out.println(" times");
-		 
+		
+		System.out.println();
+		
+		System.out.print("Frequency of the character " + 'a' + " is: ");
 		s.getCharFrequency('a');
 
+		
 		System.out.println();
-		System.out.println("collection of unique characters and it's counts");
+		System.out.println("Collection of unique characters and it's counts");
 		s.getChars();
-
+		
+		
+		System.out.println();
+		System.out.println("list of words in a text");
+		s.words();
+		
+		System.out.println();
+		System.out.print("Count of a char which most popular: ");
+		s.getMostPopularCharCount();
+		
+		
 	}
 
+	
+	
 	@Override
 	public int getCharFrequency(char c) {
-		g=c;
 		int fr = getCharCount(c) / length;
 
 		System.out.println(fr + " %");
@@ -67,7 +80,7 @@ public class TextOp extends TextStatistics {
 				Count++;
 			}
 		}
-		System.out.println(Count);
+		System.out.print(Count);
 		return Count;
 	}
 
@@ -79,13 +92,14 @@ public class TextOp extends TextStatistics {
 		int value = 1;
 
 		for (int i = 0; i < length; i++) {
-			buf = " " + buffer.charAt(i);
+			buf = "" + buffer.charAt(i);
+			
 			if (!mapUnCh.containsKey(buf)) {
 				int val = 1;
 				mapUnCh.put(buf, val);
-			}
+				}
 
-			else {
+			else  {
 				for (Entry<String, Integer> entry : mapUnCh.entrySet())
 					if (buf.equals(entry.getKey())) {
 						value = entry.getValue();
@@ -100,14 +114,87 @@ public class TextOp extends TextStatistics {
 
 	@Override
 	public List<String> words() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		TreeSet <String> listWords = new TreeSet<>();
+		String k = "";
+		int value = 0;
+
+		for (int i = 0; i < length; i++) {
+			k= " ";
+			if (buffer.charAt(i) == ' ' || i == length-1) {
+				for (int y=value; y<i+1; y++){
+					k += "" + buffer.charAt(y);
+				}
+
+				listWords.add (k);
+				value = i;
+			}
+		}
+		List <String> listW = new ArrayList(listWords);
+		System.out.println(listW);
+		return listW;
 	}
 
 	@Override
 	public int getMostPopularCharCount() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+//		Map <String, Integer> mapa = getChars();
+//		int value=0;
+//		for (Entry<String, Integer> entry : mapa.entrySet())
+//			if (entry.getValue() +1 > entry.getValue()) {
+//				value = entry.getValue()+1;
+//				entry.setValue(++value);
+//			}
+		
+		
+		
+		Map<String, Integer> mapUnCh = new HashMap<>();
+		String buf = " ";
+		int value = 1;
+
+		for (int i = 0; i < length; i++) {
+			buf = "" + buffer.charAt(i);
+			
+			if (!mapUnCh.containsKey(buf)) {
+				int val = 1;
+				mapUnCh.put(buf, val);
+				}
+
+			else  {
+				for (Entry<String, Integer> entry : mapUnCh.entrySet())
+					if (buf.equals(entry.getKey())) {
+						value = entry.getValue();
+						entry.setValue(++value);
+					}
+			}
+		}
+		
+		int va=0;
+		for (Entry<String, Integer> entry : mapUnCh.entrySet())
+			if (entry.getValue() +1 > entry.getValue()) {
+				va = entry.getValue()+1;
+			}
+		
+		
+		
+
+		System.out.println(va);
+		return va;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
 	}
 
 	@Override
