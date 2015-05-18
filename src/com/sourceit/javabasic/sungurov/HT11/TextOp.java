@@ -3,11 +3,13 @@ package com.sourceit.javabasic.sungurov.HT11;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.SortedMap;
+import java.util.SortedSet;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
@@ -46,16 +48,21 @@ public class TextOp extends TextStatistics {
 		
 		System.out.println();
 		System.out.println("Collection of unique characters and it's counts");
-		s.getChars();
-		
+		System.out.println(s.getChars());
 		
 		System.out.println();
 		System.out.println("list of words in a text");
-		s.words();
+		System.out.println(s.words());
 		
 		System.out.println();
 		System.out.print("Count of a char which most popular: ");
-		s.getMostPopularCharCount();
+		System.out.println(s.getMostPopularCharCount());
+		
+		System.out.println();
+		System.out.print("Count of a char which least popular: ");
+		System.out.println(s.getLeastPopularCharCount());
+		
+		
 		
 		
 	}
@@ -93,8 +100,12 @@ public class TextOp extends TextStatistics {
 
 		for (int i = 0; i < length; i++) {
 			buf = "" + buffer.charAt(i);
+
+			if (buffer.charAt(i) == ' ') {
+				continue;
+			}
 			
-			if (!mapUnCh.containsKey(buf)) {
+			else if (!mapUnCh.containsKey(buf)) {
 				int val = 1;
 				mapUnCh.put(buf, val);
 				}
@@ -107,8 +118,6 @@ public class TextOp extends TextStatistics {
 					}
 			}
 		}
-
-		System.out.println(mapUnCh);
 		return mapUnCh;
 	}
 
@@ -131,78 +140,52 @@ public class TextOp extends TextStatistics {
 			}
 		}
 		List <String> listW = new ArrayList(listWords);
-		System.out.println(listW);
 		return listW;
 	}
 
 	@Override
 	public int getMostPopularCharCount() {
 		
-//		Map <String, Integer> mapa = getChars();
-//		int value=0;
-//		for (Entry<String, Integer> entry : mapa.entrySet())
-//			if (entry.getValue() +1 > entry.getValue()) {
-//				value = entry.getValue()+1;
-//				entry.setValue(++value);
-//			}
-		
-		
-		
-		Map<String, Integer> mapUnCh = new HashMap<>();
-		String buf = " ";
-		int value = 1;
-
-		for (int i = 0; i < length; i++) {
-			buf = "" + buffer.charAt(i);
-			
-			if (!mapUnCh.containsKey(buf)) {
-				int val = 1;
-				mapUnCh.put(buf, val);
+		Map <String, Integer> mapa = getChars();
+		int maxValue=0;
+		for (Entry<String, Integer> entry : mapa.entrySet())
+		{
+			if (entry.getValue() > maxValue) {
+				if (!entry.getValue().equals(' ')) {
+				maxValue = entry.getValue();
 				}
-
-			else  {
-				for (Entry<String, Integer> entry : mapUnCh.entrySet())
-					if (buf.equals(entry.getKey())) {
-						value = entry.getValue();
-						entry.setValue(++value);
-					}
 			}
 		}
+		return maxValue;
 		
-		int va=0;
-		for (Entry<String, Integer> entry : mapUnCh.entrySet())
-			if (entry.getValue() +1 > entry.getValue()) {
-				va = entry.getValue()+1;
-			}
-		
-		
-		
-
-		System.out.println(va);
-		return va;
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
-		
+	
 		
 	}
 
 	@Override
 	public int getLeastPopularCharCount() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		Map <String, Integer> mapa = getChars();
+		int minValue=0;
+		
+			
+		
+		for (Entry<String, Integer> entry : mapa.entrySet())
+		{
+			if (minValue > entry.getValue()) {
+				if (!entry.getValue().equals(' ')) {
+					minValue = entry.getValue();
+				}
+			}
+		}
+
+		return minValue;
 	}
 
+	
+	
+	
+	
 	@Override
 	public char getCharByCount(int count) {
 		// TODO Auto-generated method stub
