@@ -42,8 +42,8 @@ public class TextOp extends TextStatistics {
 		
 		System.out.println();
 		
-		System.out.print("Frequency of the character " + 'a' + " is: ");
-		s.getCharFrequency('a');
+		System.out.print("Frequency of the character " + 'l' + " is: ");
+		System.out.println(s.getCharFrequency('l') + " %");
 
 		
 		System.out.println();
@@ -63,17 +63,24 @@ public class TextOp extends TextStatistics {
 		System.out.println(s.getLeastPopularCharCount());
 		
 		
-		
-		
 	}
 
 	
 	
 	@Override
 	public int getCharFrequency(char c) {
-		int fr = getCharCount(c) / length;
+		
+		buffer = this.getText();
+		int length = buffer.length();
 
-		System.out.println(fr + " %");
+		for (int i = 0; i < length; i++) {
+			if (c == buffer.charAt(i)) {
+				Count++;
+			}
+		}
+
+		int fr = (Count * 100 / length );
+
 		return fr;
 	}
 

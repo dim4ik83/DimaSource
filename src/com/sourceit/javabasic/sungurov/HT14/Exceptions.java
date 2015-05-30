@@ -18,6 +18,9 @@ public class Exceptions {
 		} catch (NumberFormatException e) {
 			System.err.println("Неверный формат строки!");
 		}
+		finally {}
+		
+		
 
 		try {
 			String tIndStart = args[len - 2];
