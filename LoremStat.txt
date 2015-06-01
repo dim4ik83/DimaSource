@@ -1,0 +1,9 @@
+Statistics:
+Frequency of the character f is: 2%
+The character f occurs in a text: 12 times
+Collection of unique characters and it's counts{,=4, .=4, D=1, E=1, L=1, U=1, a=29, b=3, c=16, d=18, e=37, f=3, g=3, h=1, i=42, l=21, m=17, n=24, o=29, p=11, q=5, r=22, s=18, t=32, u=28, v=3, x=3}
+list of words in a text[  Duis ,   Excepteur ,   Ut ,   ad ,   adipiscing ,   aliqua. ,   aliquip ,   amet, ,   anim ,   aute ,   cillum ,   commodo ,   consectetur ,   consequat. ,   culpa ,   cupidatat ,   deserunt ,   do ,   dolor ,   dolore ,   ea ,   eiusmod ,   elit, ,   enim ,   esse ,   est ,   et ,   eu ,   ex ,   exercitation ,   fugiat ,   id ,   in ,   incididunt ,   ipsum ,   irure ,   labore ,   laboris ,   laborum. ,   magna ,   minim ,   mollit ,   nisi ,   non ,   nostrud ,   nulla ,   occaecat ,   officia ,   pariatur. ,   proident, ,   qui ,   quis ,   reprehenderit ,   sed ,   sint ,   sit ,   sunt ,   tempor ,   ullamco ,   ut ,   velit ,   veniam, ,   voluptate ,  Lorem ]
+Count of a char which most popular: 42
+Count of a char which least popular: 0
+------------------------
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 

@@ -61,12 +61,8 @@ public class TextOp extends TextStatistics {
 		System.out.println();
 		System.out.print("Count of a char which least popular: ");
 		System.out.println(s.getLeastPopularCharCount());
-		
-		
 	}
 
-	
-	
 	@Override
 	public int getCharFrequency(char c) {
 		
@@ -94,7 +90,6 @@ public class TextOp extends TextStatistics {
 				Count++;
 			}
 		}
-		System.out.print(Count);
 		return Count;
 	}
 
@@ -165,8 +160,6 @@ public class TextOp extends TextStatistics {
 		}
 		return maxValue;
 		
-	
-		
 	}
 
 	@Override
@@ -174,8 +167,6 @@ public class TextOp extends TextStatistics {
 		
 		Map <String, Integer> mapa = getChars();
 		int minValue=0;
-		
-			
 		
 		for (Entry<String, Integer> entry : mapa.entrySet())
 		{
@@ -189,10 +180,6 @@ public class TextOp extends TextStatistics {
 		return minValue;
 	}
 
-	
-	
-	
-	
 	@Override
 	public char getCharByCount(int count) {
 		// TODO Auto-generated method stub
