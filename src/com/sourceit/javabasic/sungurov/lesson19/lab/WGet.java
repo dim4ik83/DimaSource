@@ -9,6 +9,8 @@ import java.io.PrintWriter;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class WGet {
 
@@ -56,7 +58,8 @@ public class WGet {
 			System.out.println();
 
 			byte choice = in.nextByte();
-
+			int count = 0;
+			
 			switch (choice) {
 
 			case 1:
@@ -107,7 +110,7 @@ public class WGet {
 				String word = in.next();
 				System.out.println("in text of page: " + command);
 				
-				int count = 0;
+				count = 0;
 				for (String s : file) {
 					System.out.println(s);
 					if (s.contains(word)) {
@@ -119,8 +122,45 @@ public class WGet {
 				break;
 
 			case 4:
+				
+				Set <String> urls = new TreeSet<>();
+				char t;
+				String h = "";
+				String URL [] = { "http://", "https://", "ftp", "mailto", "rtmp"};
+				
+				String[] parcer=null;
+				for (String s : file) {
+					
+					for (int u=0; u<URL.length; u++) {
+					
+					if (s.contains(URL[u])) {
+						parcer = s.split((URL[u]));
+						
+						for (int i=1; i<parcer.length; i++) {
+							h="";							
+							for (int j=0; j<parcer[i].length (); j++)
+							{
+								t = parcer[i].charAt(j);
+								if (t == ' ' || t== '"' ) {
+									break;
+								}
+								h=h+t;
+								
+							}	//for j
+							urls.add(h);
+						}	//for i
+					}	//if
+					}	// for u
+				}
 
-				System.out.println("all url's on the page");
+				System.out.println("In your site: " + command);
+				
+				for (String s: urls){
+					count ++;
+					System.out.println("URL'  "+ s);
+				}
+
+				System.out.println("In the page is different " + count + " URLs");
 
 				break;
 
