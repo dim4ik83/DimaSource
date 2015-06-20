@@ -16,7 +16,7 @@ public class WGet  {
 	 * @param args
 	 */
 	final static String commands [] = {"1) Save page", "2) Display title", "3) Find a word",
-		"4) List all url's on the page"};
+		"4) List all url's on the page", "5) Exit"};
 		
 	public static void main(String[] args) {
 		
@@ -42,6 +42,8 @@ public class WGet  {
 			try {
 			 file = getOpenFile (command);
 			} catch (Exception e){};
+			
+		while (true) {
 			
 			Scanner in = new Scanner (System.in);
 			System.out.println("Select what to do next: ");
@@ -71,16 +73,27 @@ public class WGet  {
 			    		outputStream.close();
 			    	}
 			    }
-
+			    
+			    System.out.println("In your site: " + command);
 			    System.out.println("You saved your page. Your file is: HTMLpage.txt");
+			    System.out.println();
 			
 			break;
 			
 		case 2:
 			
+			String [] title = null;
 			
+			for ( String s: file) {
+				if (s.contains("<title>")) {
+					String [] parcer = s.split("<title>");
+					title =parcer[1].split("</title>");
+				}
+			}
 			
-			System.out.println("Title of your page is");
+			System.out.println("In your site: " + command);
+			System.out.println("Title of your page is: " + title[0]);
+			System.out.println();
 			
 			break;
 			
@@ -96,14 +109,17 @@ public class WGet  {
 			
 			break;
 		
-		}
-	
 		
-
+	
+		case 5:
+			
+			System.exit(0);
+		}
+		}	//while
 	}
 	
 	public static String getInstructions () {
-		return "Usage: some web address\n" + "           or -i\n" + "Example: http//google.com\n";
+		return "Usage: some web address\n" + "           or -i\n" + "Example: https://google.com\n";
 	}
 	
 	public static ArrayList<String> getOpenFile (String url) {
