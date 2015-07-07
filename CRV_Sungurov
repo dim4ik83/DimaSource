@@ -1,0 +1,206 @@
+<html>
+<head>
+<title>CRV</title>
+</head>
+<body>
+<H1 align="center">CRV_ Sungurov Dmitry</H1>
+
+<form>
+  
+  <table cols="2" width="70%" align="center" >
+  
+  <tr><td valign="top" colspan="2"><H3>Personal information:</H3></td></tr>
+  
+  <tr><td valign="top"><H4>City:</H4></td>
+	  <td valign="top"><p>Kharkov</p></td></tr>
+  
+  <tr><td valign="top"><H4>Date of birth:</H4></td>
+      <td valign="top"><p>11.02.1983</p></td></tr>
+  
+  <tr><td valign="top"><H4>Tel. number: </H4></td>
+	  <td valign="top"><p>097-863-06-25</p></td></tr>
+  
+  <tr><td valign="top"><H4>email</H4></td>
+	  <td valign="top"><a href="mailto:dmitriy.sungurov@mail.ru">dmitriy.sungurov@mail.ru</a></td></tr>
+  
+  <tr><td valign="top"><H4>skype</H4></td>
+      <td valign="top"><p>dim4ik19831</p></td></tr>
+   
+  <tr><td valign="top" colspan="2"><H3>Education:</H3></td></tr>
+  
+  <tr><td valign="top"><H4>Terms of studiing:</H4></td>
+	  <td valign="top"><p>september 2000 - july 2005</p></td></tr>
+  
+  <tr><td valign="top"><H4>Institute:</H4></td>
+      <td valign="top"><p>Kharkov National Economical University. Faculty of Economic computer science, Qualified in Computer Science. Primary academic courses: computer architecture, internet technologies and Java language, support systems and decision-making, CASE technologies, computer networks, organization of databases, object-oriented programming.
+							Qualified in Computer Systems Analyst.</p></td></tr>
+  
+  <tr><td valign="top"><H4>Terms of studiing:</H4></td>
+	  <td valign="top"><p>september 2004 - november 2005</p></td></tr>
+  
+  <tr><td valign="top"><H4>Institute:</H4></td>
+	  <td valign="top"><p>Kharkov National Economical University. Faculty of banking management, Qualified in Banking management.</p></td></tr>
+  
+  <tr><td valign="top" colspan="2"><H3>Additional skills:</H3></td></tr>
+  
+  <tr><td valign="top"><H4>Terms of studiing:</H4></td>
+	  <td valign="top"><p>september 2011 - december 2011</p></td></tr>
+  
+  <tr><td valign="top"><H4>courses:</H4></td>
+	  <td valign="top"><p>Basic Academy of Information Technology "BYTES", Advanced course programming in Java SE. Obtained knowledge: data Types, cycles, objects and classes, interfaces. Swing, Exception, Thread, Collection, SVN.</p></td></tr>
+  
+  <tr><td valign="top"><H4>Terms of studiing:</H4></td>
+	  <td valign="top"><p>march 2015 - till now</p></td></tr>
+   
+  <tr><td valign="top"><H4>courses:</H4></td>
+	  <td valign="top"><p>Source IT. Course programming in Java basic</p></td></tr>
+  
+  <tr><td valign="top" colspan="2"><H3>Work experience:</H3></td></tr>
+  
+  <tr><td valign="top"><H4>Working terms:</H4></td>
+	  <td valign="top"><p>september 2005 - november 2006</p></td></tr>
+  
+  <tr><td valign="top"><H4>Working place:</H4></td>
+	  <td valign="top"><p>'Ordgonikedze branch of a Prominvestbank in Kharkov'</p></td></tr>
+  
+  <tr><td valign="top"><H4>position:</H4></td>
+	  <td valign="top"><p>primary economist</p></td></tr>
+  
+  <tr><td valign="top"><H4>responsibility:</H4></td>
+	  <td valign="top">
+	    <p>1. consumer lending (consumer loan, mortgage, auto loan);</p>
+		<p>2. consult client;</p>
+		<p>3. maintenance lending project;</p>
+		<p>4. creation of resources;</p>
+		<p>5. valuation mortgage;</p>
+		<p>6. preparation pledge and lending agreement;</p>
+		<p>7. service and ATM encashment.</p>
+	  </td></tr>
+  
+  <tr><td valign="top" colspan="2"></td></tr>
+  
+  <tr><td valign="top"><H4>Working terms:</H4></td>
+	  <td valign="top"><p>november 2006 - june 2007</p></td></tr>
+  
+  <tr><td valign="top"><H4>Working place:</H4></td>
+	  <td valign="top"><p>'Ukrsibbank', Kharkov city</p></td></tr>
+  
+  <tr><td valign="top"><H4>position:</H4></td>
+	  <td valign="top"><p>manager of medium and small businesses</p></td></tr>
+  
+  <tr><td valign="top"><H4>responsibility:</H4></td>
+	  <td valign="top">
+	    <p>1. consumer lending (consumer loan, mortgage, auto loan, loan in business);</p>
+		<p>2. consult client;</p>
+		<p>3. maintenance lending project;</p>
+		<p>4. financing rating;</p>
+		<p>5. valuation mortgage;</p>
+		<p>6. preparation pledge and lending agreement;</p>
+		<p>7. search new clients;</p>
+		<p>8. sale banking products;</p>
+		<p>9. protect lending request;</p>
+	  </td></tr>
+
+  <tr><td valign="top" colspan="2"></td></tr>
+  
+  <tr><td valign="top"><H4>Working terms:</H4></td>
+	  <td valign="top"><p>july 2007 - june 2010</p></td></tr>
+  
+  <tr><td valign="top"><H4>Working place:</H4></td>
+	  <td valign="top"><p>AB 'Pivdenny', Kharkov city</p></td></tr>
+  
+  <tr><td valign="top"><H4>position:</H4></td>
+	  <td valign="top"><p>Leading economist of assets and liabilities department</p></td></tr>
+  
+  <tr><td valign="top"><H4>responsibility:</H4></td>
+	  <td valign="top">
+	    <p>1. consumer lending (consumer loan, mortgage, auto loan, loan in business);</p>
+		<p>2. consult client;</p>
+		<p>3. maintenance lending project;</p>
+		<p>4. financing rating;</p>
+		<p>5. valuation mortgage;</p>
+		<p>6. preparation pledge and lending agreement;</p>
+		<p>7. search new clients;</p>
+		<p>8. Work with the state register of movable and immovable property;</p>
+		<p>9. Financial monitoring;</p>
+	  </td></tr>
+    
+  <tr><td valign="top"><H4>Working terms:</H4></td>
+	  <td valign="top"><p>august 2010 - december 2010</p></td></tr>
+  
+  <tr><td valign="top"><H4>Working place:</H4></td>
+	  <td valign="top"><p>DGK Co Ltd</p></td></tr>
+  
+  <tr><td valign="top"><H4>position:</H4></td>
+	  <td valign="top"><p>director of operations</p></td></tr>
+  
+  <tr><td valign="top"><H4>responsibility:</H4></td>
+	  <td valign="top">
+	    <p>1. Organization of production;</p>
+		<p>2. Bargaining with clients;</p>
+		<p>3. HRM;</p>
+		<p>4. Sale illiquid assets;</p>
+		<p>5. Holding meetings;</p>
+	  </td></tr>
+  
+  <tr><td valign="top"><H4>Working terms:</H4></td>
+	  <td valign="top"><p>june 2011 - march 2013</p></td></tr>
+  
+  <tr><td valign="top"><H4>Working place:</H4></td>
+	  <td valign="top"><p>"VTB Bank"</p></td></tr>
+  
+  <tr><td valign="top"><H4>position:</H4></td>
+	  <td valign="top"><p>Leading expert of lending corporate products department</p></td></tr>
+  
+  <tr><td valign="top"><H4>responsibility:</H4></td>
+	  <td valign="top">
+	    <p>1. Collect documents;</p>
+		<p>2. Analysis solvency, consolidation, financial condition of client, group of connected subjects;</p>
+		<p>3. financing rating;</p>
+		<p>4. valuation mortgage;</p>
+		<p>5. preparation pledge and lending agreement;</p>
+		<p>6. consult clients;</p>
+	  </td></tr>
+  
+  <tr><td valign="top"><H4>Working terms:</H4></td>
+	  <td valign="top"><p>august 2013 - till now</p></td></tr>
+  
+  <tr><td valign="top"><H4>Working place:</H4></td>
+	  <td valign="top"><p>private entrepreneur Kyznetsov S.S.</p></td></tr>
+  
+  <tr><td valign="top"><H4>position:</H4></td>
+	  <td valign="top"><p>Financial director</p></td></tr>
+  
+  <tr><td valign="top"><H4>responsibility:</H4></td>
+	  <td valign="top">
+	    <p>1. fixing of budgets</p>
+		<p>2. financial analysis;</p>
+		<p>3. work with bank structures;</p>
+		<p>4. Analysis of production cost and its cutting;</p>
+	  </td></tr>
+  
+  <tr><td valign="top"><H4>Foreign languages</H4></td>
+	  <td valign="top">
+	    <p>English - pre-intermediate</p>
+		<p>Russian - native</p>
+		<p>Ukrainian - native</p>
+	  </td></tr>
+  
+  <tr><td valign="top"><H4>PC skills:</H4></td>
+	  <td valign="top">
+	    <p>Advanced user</p>
+		<p>MS Office, Internet, SAP, «ORACLE» (SQL requests), BAT, BI 2, Core Java, Servlets/JSP, jUnit, Eclipse, SVN, Git, MySQL</p>
+	  </td></tr>
+  
+ <tr><td valign="top"><H4>About myself</H4></td>
+	  <td valign="top">
+	    <p>associative, responsible, tactful, purposeful; managerial abilities, good trainability. I have driver license (cat. "B") and driving experience is more than 15 years. Also I am private entrepreneur on common system (since 01.01.15) - my entrepreneurial activity is not active.
+			Married. No children.</p>
+	  </td></tr> 
+ 
+ </table> 
+ 
+  </form>
+ 
+</body>
+</html>
