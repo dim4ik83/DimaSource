@@ -34,7 +34,12 @@ class Account
 	 */
 	public void withdraw(double amount)
 	{
-		balance = balance - amount;
+		if (balance<amount) {
+			System.out.println("Enter the sum less then: " + balance);
+		}
+		else {balance = balance - amount;}
+		
+		
 	}
 
 	/* Returns the balance of the Account

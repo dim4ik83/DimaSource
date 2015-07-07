@@ -7,10 +7,10 @@ class Person
     private int age; 
   
   // Constructor 
-    public Person (String _name, int _age) 
+    public Person (String name1, int age1) 
     { 
-        String name = _name; 
-        int age = _age; 
+        name = name1; 
+        age = age1; 
     } 
 
   // Instance methods 
